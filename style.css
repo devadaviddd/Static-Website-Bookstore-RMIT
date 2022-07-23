@@ -435,12 +435,17 @@ select{
     #additionalImage img{ 
         max-width: 130px;
     }
+    header, footer {
+        font-size: 10px;
+        border-radius: 3px;
+    }
 }
 
 @media only screen and (max-width: 525px) {
     #additionalImage img{ 
         max-width: 100px;
     }
+   
 }
 
 
