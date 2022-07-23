@@ -281,18 +281,19 @@ form {
     color: #FEFBF6;
     box-shadow: 0px 0px 40px 20px rgb(239, 46, 197);
     border-radius: 5%;
+    text-align: center;
 
 }
 
 form div {
     margin: 3.5px;
+    width: 95%;
 }
 
 
 
 form div input {
     padding: 5px;
-    
     
 }
 
@@ -310,12 +311,17 @@ form input:focus {
     outline: none;
 }
 
+
 select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: 6px;
     outline: none;
+}
+
+.note textarea {
+    width: 100%;
 }
 
 /* Responsive */
@@ -438,8 +444,40 @@ select{
 }
 
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 800px) {
     header, footer {
         position: static;
+    }
+
+    form {
+        overflow: hidden;
+    }
+
+
+    form h1 {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+    form div {
+        font-size: 15px;
+        height: 10%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .note textarea {
+        margin: 0;
+    }
+    form .btn {
+        margin: 0;
+        padding: 0;
+    }
+
+ 
+
+    form .btn button {
+        padding: 0;
+        width: 50%;
     }
 }
