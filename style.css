@@ -432,6 +432,9 @@ select{
 }
 
 @media only screen and (max-width: 800px) {
+    .category h2, .sub_category h2 {
+        font-size: 20px;
+    }
     #additionalImage img{ 
         max-width: 130px;
     }
@@ -450,6 +453,8 @@ select{
 
 
 @media only screen and (max-height: 800px) {
+    
+
     header, footer {
         position: static;
     }
