@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Roboto+Mono:ital@0;1&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-book  fa-3x"></i>
+        </div>
+
+        <h1 class="element">BOOKSTORE 40</h1>
+
+        <nav class="element">
+            <ul class="headNav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="category1.html">Fiction</a></li>
+                <li><a href="category2.html">Business</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="displayForm">
+            <form method="post" accept="exercise1.html" enctype="multipart/form-data"> 
+                <h1>Contact Us</h1>
+                <div>
+                    <b>Contact Purpose: </b>
+                    <select name="santas-list">
+                        <option value="" selected >Please Select</option>
+                        <option value="">I want to sell books</option>
+                        <option value="">I want to buy books</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="username"> <b>Username: </b> </label> 
+                    <input type="text" placeholder="Name:" name="username" maxlength="50" autocomplete="off" required id="username">
+                </div>
+                <div>
+                    <label for="email"><b>Email: </b></label>
+                    <input type="email" placeholder="Email" required name="email" autocomplete="off" id="email">
+                </div>
+                <div>
+                    <label for="phone"><b>Phone number: </b> </label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{0,13}">
+                </div>
+
+                <div>
+                    <b>How can we contact you: </b> <br>
+                    <input type="radio" id="Email" name="contactMethod" value="email" ><label for="Email">Email</label> <br>
+                    <input type="radio" id="Phone" name="contactMethod" value="phone" ><label for="Phone">Phone</label> <br>
+                </div>
+
+                <div>
+                    <b>Do you want to receive our weekly newsletter: </b> <br>
+                    <input type="radio" id="Yes" name="yesNo" value="yes"checked ><label for="Yes" >Yes</label> <br>
+                    <input type="radio" id="No" name="yesNo" value="no" ><label for="No">No</label> <br>
+                </div>
+               
+                <div>
+                    <b>Note: </b> <br>
+                    <textarea name="fieldOfText"  cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" name="submit">submit</button>
+                    <button type="reset" name="reset">reset</button>
+                </div>
+
+            </form>
+           
+
+        </div>
+    </main>
+
+    <footer>
+        <h1>For more Information</h1>
+        <nav>
+            <ul class="footNav">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
