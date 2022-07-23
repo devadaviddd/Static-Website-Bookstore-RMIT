@@ -31,9 +31,9 @@
     </header>
     <main>
         <div class="displayForm">
-            <form method="post" accept="exercise1.html" enctype="multipart/form-data"> 
+            <form method="post" enctype="multipart/form-data" action=""> 
                 <h1>Contact Us</h1>
-                <div>
+                <div id="options">
                     <b>Contact Purpose: </b>
                     <select name="santas-list">
                         <option value="" selected >Please Select</option>
@@ -50,17 +50,17 @@
                     <input type="email" placeholder="Email" required name="email" autocomplete="off" id="email">
                 </div>
                 <div>
-                    <label for="phone"><b>Phone number: </b> </label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{0,13}">
+                    <label for="telephone"><b>Phone number: </b> </label>
+                    <input type="number" id="telephone" name="telephone" pattern="[0-9]{0,13}" required>
                 </div>
 
-                <div>
+                <div class="radio">
                     <b>How can we contact you: </b> <br>
                     <input type="radio" id="Email" name="contactMethod" value="email" ><label for="Email">Email</label> <br>
                     <input type="radio" id="Phone" name="contactMethod" value="phone" ><label for="Phone">Phone</label> <br>
                 </div>
 
-                <div>
+                <div class="radio">
                     <b>Do you want to receive our weekly newsletter: </b> <br>
                     <input type="radio" id="Yes" name="yesNo" value="yes"checked ><label for="Yes" >Yes</label> <br>
                     <input type="radio" id="No" name="yesNo" value="no" ><label for="No">No</label> <br>
@@ -68,10 +68,10 @@
                
                 <div>
                     <b>Note: </b> <br>
-                    <textarea name="fieldOfText"  cols="30" rows="10"></textarea>
+                    <textarea name="fieldOfText"  cols="50" rows="10"></textarea>
                 </div>
 
-                <div>
+                <div class="btn">
                     <button type="submit" name="submit">submit</button>
                     <button type="reset" name="reset">reset</button>
                 </div>

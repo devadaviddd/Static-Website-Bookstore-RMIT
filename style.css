@@ -67,6 +67,7 @@ header h1 {
 header nav {
     margin: auto;
     width: 50%;
+
   
 }
 
@@ -84,6 +85,9 @@ header nav ul li a, footer nav ul li a {
 
 }
 
+.book a {
+    text-decoration: none;
+}
 
 main {
     width: 80%;
@@ -102,7 +106,7 @@ main {
     text-align: center;
 }
 
-.category h2, .sub_category h2 {
+.category h2, .sub_category h2, form h1 {
     color: #A6D1E6;
     font-size: 50px;
     text-shadow: 0px 0px 20px rgb(77, 6, 242);
@@ -126,6 +130,7 @@ main {
     list-style: none;
     text-align: center;
     width: fit-content;
+    margin-bottom: 30px;
 }
 
 .breadcrumb li {
@@ -144,7 +149,9 @@ main {
 .breadcrumb li a {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(244, 69, 5);
+    color: rgb(255, 80, 17);
+    font-size: 25px;
+    
     
 }
 
@@ -152,7 +159,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
     color: #FEFBF6;
     
 }
@@ -185,19 +192,11 @@ main {
     height: 100px;
     width: 300px;
     border: 2px solid black;
-    filter: blur(5px);
     margin-top: 10px; 
     object-fit: cover;
     
-    
 }
 
-#additionalImage img:hover {
-    object-fit: cover;
-    filter: none;
-    transform: scale(1.1);
-
-}
 .price {
     margin: auto;
     height: 350px;
@@ -229,51 +228,218 @@ main {
     font-family: inherit;
     font-size: 25px;
     border-radius: 10px;
-    background: #1a46ff;
-    background: linear-gradient(147deg,#1a46ff 0%, #c029ee 80%);
-    background: -webkit-linear-gradient(147deg,#1a46ff 0%, #c029ee 80%);
-    background: -moz-linear-gradient(147deg,#1a46ff 0%, #c029ee 80%);
-    color:rgb(133, 244, 255);
+    background: transparent;
+    box-shadow: 0px 0px 40px 12px rgb(249, 249, 3);
+
+    color:rgb(133, 244, 255); 
     text-shadow: 0 2px 5px black;
+    cursor: pointer;
 
 
 }
 
-.price button:hover {
-    transform: scale(0.98);
-    background: #1a46ff;
+form button {
+    font-family: inherit;
+    font-size: 25px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
     background: linear-gradient(19deg,#1a46ff 0%, #c029ee 80%);
     background: -webkit-linear-gradient(19deg,#1a46ff 0%, #c029ee 80%);
     background: -moz-linear-gradient(19deg,#1a46ff 0%, #c029ee 80%);
+    color:rgb(133, 244, 255); 
+    border-radius: 5px;
+
 }
 
-.price button:hover {
-
+.price button:hover, form button:hover{
+    transform: scale(0.98);
+    
+    
 }
+
+.display p {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
 
 .displayForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: rgb(226, 185, 185);
 }
 
 form {
-    background-color: #eee;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 80%;
     justify-content: center;
     font-size: large;
-    
+    color: #FEFBF6;
+    box-shadow: 0px 0px 40px 20px rgb(239, 46, 197);
+    border-radius: 5%;
+
 }
 
 form div {
     margin: 3.5px;
 }
 
+
+
 form div input {
     padding: 5px;
+    
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.radio {
+    text-align: center;
+}
+
+form input:focus {
+    outline: none;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 6px;
+    outline: none;
+}
+
+/* Responsive */
+/* Mobile */
+@media only screen and (max-width: 1390px) {
+    .book a img {
+        width: 250px;
+    }
+    .headNav, .footNav {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #additionalImage {
+        display: inline;
+    }
+    #additionalImage img{ 
+        max-width: 200px;
+        height: 500px;
+
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .book a img {
+        width: 200px;
+        height: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 1010px) {
+    .book a img {
+        width: 300px;
+        height: 500px;
+    }
+
+    header {
+        font-size: 13px;
+    }
+    .headNav, .footNav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .display {
+        height: max-content;
+        margin-bottom: 200px;
+    
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .price {
+        margin: auto;
+    }
+
+    .display p {
+        font-size: 20px;
+    }
+    
+
+
+    #additionalImage {
+        display: inline;
+    }
+    #additionalImage img{ 
+        max-width: 200px;
+        height: 500px;
+
+    }
+
+    form div {
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+        width: 80%;
+    }
+
+    form .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form .btn button {
+        margin: 5px 0;
+    }
+
+    form .radio{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #additionalImage img{ 
+        max-width: 130px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    #additionalImage img{ 
+        max-width: 100px;
+    }
+}
+
+
+@media only screen and (max-height: 700px) {
+    header, footer {
+        position: static;
+    }
 }
