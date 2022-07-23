@@ -46,7 +46,7 @@ footer{
     position: fixed;
     bottom: 0;
     color: #FEFBF6;
-    text-shadow: 4px 4px 13px rgba(37, 37, 32, 0.994);
+    text-shadow: 4px 4px 13px rgba(239, 255, 11, 0.994);
     border-radius: 5%;
     background-color: transparent;
     backdrop-filter: blur(8px);
